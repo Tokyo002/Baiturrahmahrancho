@@ -7,9 +7,11 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GalleryController;
 
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index', ['title' => 'Beranda']);
-});
+})->name('home');
+
+Route::redirect('/index', '/', 301);
 Route::get('/404', function () {
     return view('404', ['title' => 'Kesalahan 404']);
 });
