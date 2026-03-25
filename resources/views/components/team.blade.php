@@ -11,7 +11,7 @@
         <div class="row g-5">
           <div class="col-lg-4 col-xl-5">
             <div class="team-img wow zoomIn" data-wow-delay="0.1s">
-              <img src="img/iswandi.jpg" class="img-fluid" alt="" />
+              <img src="img/Iswandi.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-8 col-xl-7">
