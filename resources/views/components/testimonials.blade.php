@@ -7,8 +7,8 @@
                 <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.1s">
                     <div class="testimonial-item">
                         <div class="d-flex mb-3">
-                            <div class="position-relative">
-                                <img src="img/testimonial-1.jpg" class="img-fluid" alt="">
+                            <div class="position-relative d-flex align-items-center justify-content-center rounded-circle bg-light" style="width: 100px; height: 100px;">
+                                <i class="fa fa-user fa-2x text-primary"></i>
                                 <div class="btn-md-square bg-primary rounded-circle position-absolute" style="top: 25px; left: -25px;">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
@@ -24,8 +24,8 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="d-flex mb-3">
-                            <div class="position-relative">
-                                <img src="img/testimonial-2.jpg" class="img-fluid" alt="">
+                            <div class="position-relative d-flex align-items-center justify-content-center rounded-circle bg-light" style="width: 100px; height: 100px;">
+                                <i class="fa fa-user fa-2x text-primary"></i>
                                 <div class="btn-md-square bg-primary rounded-circle position-absolute" style="top: 25px; left: -25px;">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
@@ -48,8 +48,8 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="d-flex mb-3">
-                            <div class="position-relative">
-                                <img src="img/testimonial-3.jpg" class="img-fluid" alt="">
+                            <div class="position-relative d-flex align-items-center justify-content-center rounded-circle bg-light" style="width: 100px; height: 100px;">
+                                <i class="fa fa-user fa-2x text-primary"></i>
                                 <div class="btn-md-square bg-primary rounded-circle position-absolute" style="top: 25px; left: -25px;">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
@@ -72,8 +72,8 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="d-flex mb-3">
-                            <div class="position-relative">
-                                <img src="img/testimonial-4.jpg" class="img-fluid" alt="">
+                            <div class="position-relative d-flex align-items-center justify-content-center rounded-circle bg-light" style="width: 100px; height: 100px;">
+                                <i class="fa fa-user fa-2x text-primary"></i>
                                 <div class="btn-md-square bg-primary rounded-circle position-absolute" style="top: 25px; left: -25px;">
                                     <i class="fa fa-quote-left text-dark"></i>
                                 </div>
