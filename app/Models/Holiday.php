@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Holiday extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'holiday_date',
+        'type',
+        'hijri_date',
+        'description',
+    ];
+
+    protected $casts = [
+        'holiday_date' => 'date',
+    ];
+}
