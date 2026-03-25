@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Holiday;
+use App\Models\PostKajianAcara;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -62,6 +63,49 @@ class DatabaseSeeder extends Seeder
             ], [
                 'hijri_date' => $holiday['hijri_date'],
                 'description' => $holiday['description'],
+            ]);
+        }
+
+        $events = [
+            [
+                'event_name' => 'Kajian Quran Pekanan',
+                'event_date' => '2026-03-27',
+                'start_time' => '19:30',
+                'speaker' => 'Ust. Ahmad Fauzi',
+                'description' => 'Kajian rutin tafsir Al-Quran untuk jamaah umum.',
+                'location' => 'Masjid Baiturrahmah',
+                'is_routine' => true,
+            ],
+            [
+                'event_name' => 'Kajian Hadits Ahad Pagi',
+                'event_date' => '2026-03-29',
+                'start_time' => '08:00',
+                'speaker' => 'Ust. Rahmat Hidayat',
+                'description' => 'Pembahasan hadits pilihan dan adab harian muslim.',
+                'location' => 'Masjid Baiturrahmah',
+                'is_routine' => true,
+            ],
+            [
+                'event_name' => 'Program Santunan Anak Yatim',
+                'event_date' => '2026-04-05',
+                'start_time' => '16:00',
+                'speaker' => null,
+                'description' => 'Penyaluran santunan dan doa bersama untuk anak yatim.',
+                'location' => 'Aula Masjid Baiturrahmah',
+                'is_routine' => false,
+            ],
+        ];
+
+        foreach ($events as $event) {
+            PostKajianAcara::updateOrCreate([
+                'event_name' => $event['event_name'],
+                'event_date' => $event['event_date'],
+                'start_time' => $event['start_time'],
+            ], [
+                'speaker' => $event['speaker'],
+                'description' => $event['description'],
+                'location' => $event['location'],
+                'is_routine' => $event['is_routine'],
             ]);
         }
     }
