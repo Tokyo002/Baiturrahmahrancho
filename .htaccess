@@ -5,6 +5,13 @@
 
     RewriteEngine On
 
+    # Block hidden files and folders (except .well-known)
+    RewriteRule "(^|/)\.(?!well-known/)" - [F,L]
+
+    # Block direct access to Laravel core folders and sensitive project files
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|storage|tests|vendor)/ - [F,L,NC]
+    RewriteRule ^(artisan|composer\.(json|lock)|package(-lock)?\.json|vite\.config\.js|phpunit\.xml|README\.md)$ - [F,L,NC]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
