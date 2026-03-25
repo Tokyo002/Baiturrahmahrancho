@@ -72,7 +72,7 @@
                 <div class="col-lg-6 col-xl-4">
                     <div class="blog-item wow fadeIn" data-wow-delay="0.1s">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img src="{{ asset('storage/' . $post->image_path) }}" class="img-fluid w-100" alt="{{ $post->title }}">
+                            <img src="{{ asset('storage/app/public/' . ltrim($post->image_path, '/')) }}" class="img-fluid w-100" alt="{{ $post->title }}">
                             @if ($post->event_date)
                                 <div class="bg-primary d-inline px-3 py-2 text-center text-white position-absolute top-0">{{ \Carbon\Carbon::parse($post->event_date)->translatedFormat('d M Y') }}</div>
                             @endif

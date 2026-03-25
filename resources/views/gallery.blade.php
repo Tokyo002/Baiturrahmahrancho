@@ -83,7 +83,7 @@
           @forelse ($galleryItems as $item)
             <div class="col-md-6 col-lg-4">
               <div class="card border-0 shadow-sm h-100">
-                <img src="{{ asset('storage/' . $item->image_path) }}" alt="{{ $item->title ?: 'Galeri kegiatan' }}" class="card-img-top" style="height: 240px; object-fit: cover;">
+                <img src="{{ asset('storage/app/public/' . ltrim($item->image_path, '/')) }}" alt="{{ $item->title ?: 'Galeri kegiatan' }}" class="card-img-top" style="height: 240px; object-fit: cover;">
                 <div class="card-body">
                   <h5 class="card-title">{{ $item->title ?: 'Kegiatan Masjid' }}</h5>
 
